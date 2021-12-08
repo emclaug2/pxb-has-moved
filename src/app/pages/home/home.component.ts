@@ -19,18 +19,21 @@ export class HomeComponent implements OnInit {
     constructor(private readonly _viewportService: ViewportService) {}
 
     ngOnInit(): void {
-
         this.path = window.location.pathname;
         let params = window.location.href.split('?')[1];
+        let section = window.location.href.split('#')[1];
 
         if (params) {
-          params = '?' + params;
-          this.path = this.path + params;
+            params = '?' + params;
+            this.path = this.path + params;
         }
 
+        if (section) {
+            section = '#' + section;
+            this.path = this.path + section;
+        }
 
-
-      console.log(this.path);
+        console.log(this.path);
         if (this.path === '/') {
             this.path = '';
         }

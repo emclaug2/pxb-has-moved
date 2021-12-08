@@ -28,9 +28,9 @@
                 Learn More
             </button>
 
-            <div *ngIf="isSmall()" style="margin-top: 16px; width: 100%; display: flex; justify-content: space-between">
-                <button mat-flat-button color="primary" (click)="navigate()">Redirect Now</button>
-                <button mat-stroked-button color="primary" (click)="learnMore()">Learn More</button>
+            <div *ngIf="isSmall()" style="margin-top: 16px; width: 100%; display: flex; justify-content: center">
+                <button mat-flat-button color="primary" (click)="navigate()" style='margin-right: 8px'>Redirect Now</button>
+                <button mat-stroked-button color="primary" (click)="learnMore()" style='margin-left: 8px;'>Learn More</button>
             </div>
         </div>
     </div>

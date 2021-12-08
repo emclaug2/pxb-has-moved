@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": "dist/pxb-has-moved",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

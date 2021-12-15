@@ -23,6 +23,10 @@ export class HomeComponent implements OnInit {
         let params = window.location.href.split('?')[1];
         let section = window.location.href.split('#')[1];
 
+        if (params.includes('story')) {
+            this.target = 'brightlayer-ui-components'
+        }
+
         if (params) {
             params = '?' + params;
             this.path = this.path + params;

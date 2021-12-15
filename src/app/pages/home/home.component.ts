@@ -23,10 +23,9 @@ export class HomeComponent implements OnInit {
         let params = window.location.href.split('?')[1];
         let section = window.location.href.split('#')[1];
 
-        if ((params && params.includes('story') || this.path.includes('pxblue-components'))) {
-            this.target = 'brightlayer-ui-components'
+        if ((params && params.includes('story')) || this.path.includes('pxblue-components')) {
+            this.target = 'brightlayer-ui-components';
         }
-
 
         if (params) {
             params = '?' + params;
@@ -38,13 +37,12 @@ export class HomeComponent implements OnInit {
             this.path = this.path + section;
         }
 
-
         if (this.path === '/') {
             this.path = '';
         }
 
-      console.log('path = ' + this.path);
-      console.log('target = ' + this.target);
+        console.log('path = ' + this.path);
+        console.log('target = ' + this.target);
 
         setInterval(() => {
             this.remaining--;

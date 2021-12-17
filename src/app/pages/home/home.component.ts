@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
     remaining = 8;
 
     // TODO: Update this to be the correct site after brightlayer-ui.github.io is published
-    target = 'brightlayer-ui-dev';
+    target = 'brightlayer-ui-dev.github.io';
 
     constructor(private readonly _viewportService: ViewportService) {}
 
@@ -24,7 +24,7 @@ export class HomeComponent implements OnInit {
         let section = window.location.href.split('#')[1];
 
         if ((params && params.includes('story')) || this.path.includes('pxblue-components')) {
-            this.target = 'brightlayer-ui-components';
+            this.target = 'brightlayer-ui-components.github.io';
         }
 
         if (params) {
@@ -58,7 +58,7 @@ export class HomeComponent implements OnInit {
     }
 
     navigate(): void {
-        window.location.href = `https://${this.target}.github.io${this.path}`;
+        window.location.href = `https://${this.target}${this.path}`;
     }
 
     learnMore(): void {

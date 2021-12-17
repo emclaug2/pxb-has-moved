@@ -47,7 +47,7 @@ export class HomeComponent implements OnInit {
         setInterval(() => {
             this.remaining--;
 
-            if (this.remaining === 0) {
+            if (this.remaining <= 0) {
                 this.navigate();
             }
         }, 1000);

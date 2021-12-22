@@ -18,6 +18,7 @@ import { MatDividerModule } from '@angular/material/divider';
 import { AppComponent } from './app.component';
 import { PxbLogoComponent } from './components/pxb-logo/pxb-logo.component';
 import { HomeComponent } from './pages/home/home.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
     declarations: [AppComponent, HomeComponent, PxbLogoComponent],
@@ -29,6 +30,7 @@ import { HomeComponent } from './pages/home/home.component';
         MatDividerModule,
         MatToolbarModule,
         MatIconModule,
+        AppRoutingModule,
     ],
     providers: [],
     bootstrap: [AppComponent],
